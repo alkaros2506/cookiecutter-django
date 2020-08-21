@@ -2,9 +2,9 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     # noinspection PyUnresolvedReferences
-    import allauth.socialaccount.models  # type: ignore
+    import allauth.socialaccount.models  # type: ignore # noqa F401
     # noinspection PyUnresolvedReferences
-    import allauth.account.models  # type: ignore
+    import allauth.account.models  # type: ignore # noqa F401
 
 from django.contrib.auth.models import AbstractUser
 from django.db.models import CharField

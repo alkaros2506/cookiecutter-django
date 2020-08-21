@@ -6,7 +6,7 @@ from {{ cookiecutter.project_slug }}.users.tests.factories import UserFactory
 pytestmark = pytest.mark.django_db
 
 
-class TestUserCreationForm:
+class TestUserCreationForm:  # pylint: disable=W0212,R0201,R0903
     def test_clean_username(self):
         # A user with proto_user params does not exist yet.
         proto_user = UserFactory.build()

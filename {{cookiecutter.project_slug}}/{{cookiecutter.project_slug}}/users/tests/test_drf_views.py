@@ -7,7 +7,7 @@ from {{ cookiecutter.project_slug }}.users.models import User
 pytestmark = pytest.mark.django_db
 
 
-class TestUserViewSet:
+class TestUserViewSet:  # pylint: disable=R0201
     def test_get_queryset(self, user: User, rf: RequestFactory):
         view = UserViewSet()
         request = rf.get("/fake-url/")

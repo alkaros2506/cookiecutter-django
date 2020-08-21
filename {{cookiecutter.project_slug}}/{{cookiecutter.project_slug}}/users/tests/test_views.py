@@ -14,7 +14,7 @@ from {{ cookiecutter.project_slug }}.users.views import (
 pytestmark = pytest.mark.django_db
 
 
-class TestUserUpdateView:
+class TestUserUpdateView:  # pylint: disable=R0201
     """
     TODO:
         extracting view initialization code as class-scoped fixture
