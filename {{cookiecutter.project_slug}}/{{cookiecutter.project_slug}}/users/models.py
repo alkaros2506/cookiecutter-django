@@ -1,3 +1,11 @@
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    # noinspection PyUnresolvedReferences
+    import allauth.socialaccount.models  # type: ignore
+    # noinspection PyUnresolvedReferences
+    import allauth.account.models  # type: ignore
+
 from django.contrib.auth.models import AbstractUser
 from django.db.models import CharField
 from django.urls import reverse

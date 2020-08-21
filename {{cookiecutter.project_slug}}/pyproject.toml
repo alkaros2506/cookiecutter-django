@@ -48,7 +48,7 @@ django-coverage-plugin = { version = "1.8.0" } # https://github.com/nedbat/djang
 pytest-django = { version = "3.9.0" } # https://github.com/pytest-dev/pytest-django
 
 gunicorn = { version = "20.0.4" }  # https://github.com/benoitc/gunicorn
-psycopg2 = { version = "2.8.5", extras = "--no-binary psycopg2" }  # https://github.com/psycopg/psycopg2
+psycopg2 = { version = "2.8.5" }  # https://github.com/psycopg/psycopg2
 
 # Django
 # ------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 from typing import Any
 
-from allauth.account.adapter import DefaultAccountAdapter
-from allauth.socialaccount.adapter import DefaultSocialAccountAdapter
+from allauth.account.adapter import DefaultAccountAdapter  # type: ignore
+from allauth.socialaccount.adapter import DefaultSocialAccountAdapter  # type: ignore
 from django.conf import settings
 from django.http import HttpRequest
 

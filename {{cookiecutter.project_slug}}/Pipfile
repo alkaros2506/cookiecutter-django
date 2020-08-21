@@ -1,0 +1,54 @@
+[[source]]
+url = "http://build.locusdev.net:10001/simple/"
+verify_ssl = false
+name = "invitae"
+
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+Sphinx = "==3.2.1"
+black = "==19.10b0"
+coverage = "==5.2.1"
+django-stubs = "==1.5.0"
+djangorestframework-stubs = "==1.2.0"
+flake8 = "==3.8.3"
+flake8-isort = "==4.0.0"
+mypy = "==0.770"
+pre-commit = "==2.6.0"
+pylint-django = "==2.3.0"
+pytest = "==6.0.1"
+pytest-django = "==3.9.0"
+pytest-sugar = "==0.9.4"
+sphinx-autobuild = "==0.7.1"
+
+[packages]
+Django = "==3.0.9"
+Pillow = "==7.2.0"
+Werkzeug = "==1.0.1"
+argon2-cffi = "==20.1.0"
+django-allauth = "==0.42.0"
+django-cors-headers = "==3.4.0"
+django-coverage-plugin = "==1.8.0"
+django-crispy-forms = "==1.9.2"
+django-debug-toolbar = "==2.2"
+django-environ = "==0.4.5"
+django-extensions = "==3.0.5"
+django-filter = "==2.3.0"
+django-model-utils = "==4.0.0"
+django-redis = "==4.12.1"
+django-storages = {extras = ["boto3"], version = "==1.9.1"}
+djangorestframework = "==3.11.1"
+factory-boy = "==3.0.1"
+gunicorn = "==20.0.4"
+ipdb = "==0.13.3"
+newrelic = "==5.16.1.146"
+psycopg2 = "==2.8.5"
+python-slugify = "==4.0.1"
+pytz = "==2020.1"
+redis = "==3.5.3"
+
+[requires]
+python_version = "3.8"

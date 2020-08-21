@@ -84,7 +84,7 @@ MEDIA_URL = f"https://{aws_s3_domain}/media/"
 # TEMPLATES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates
-TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore[index] # noqa F405
+TEMPLATES[-1]["OPTIONS"]["loaders"] = [  # type: ignore # noqa F405
     (
         "django.template.loaders.cached.Loader",
         [
@@ -120,7 +120,7 @@ INSTALLED_APPS += ["anymail"]  # noqa F405
 # https://anymail.readthedocs.io/en/stable/installation/#anymail-settings-reference
 # https://anymail.readthedocs.io/en/stable/esps
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-ANYMAIL = {}
+ANYMAIL = {}  # type: ignore
 
 # LOGGING
 # ------------------------------------------------------------------------------

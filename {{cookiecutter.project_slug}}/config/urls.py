@@ -49,6 +49,6 @@ if settings.DEBUG:
         path("500/", default_views.server_error),
     ]
     if "debug_toolbar" in settings.INSTALLED_APPS:
-        import debug_toolbar
+        import debug_toolbar  # type: ignore
 
         urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
