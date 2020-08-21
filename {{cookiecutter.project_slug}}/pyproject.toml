@@ -37,7 +37,6 @@ django-filter = { version = "2.3.0" } # https://github.com/carltongibson/django-
 
 Werkzeug = { version = "1.0.1" } # https://github.com/pallets/werkzeug
 ipdb = { version = "0.13.3" } # https://github.com/gotcha/ipdb
-psycopg2 = { version = "2.8.5 --no-binary psycopg2" } # https://github.com/psycopg/psycopg2
 
 # Django
 # ------------------------------------------------------------------------------
