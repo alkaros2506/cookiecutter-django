@@ -10,5 +10,13 @@
   "postgresql_version": [
     "12.3",
     "11.8"
-  ]
+  ],
+  "use_docker": "n",
+  "use_async": "n",
+  "use_drf": "n",
+  "custom_bootstrap_compilation": "n",
+  "use_compressor": "n",
+  "use_celery": "n",
+  "use_mailhog": "n",
+  "use_sentry": "n"
 }
