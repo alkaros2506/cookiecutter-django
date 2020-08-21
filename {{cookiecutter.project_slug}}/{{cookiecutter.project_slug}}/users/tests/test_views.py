@@ -42,7 +42,7 @@ class TestUserUpdateView:  # pylint: disable=R0201
         assert view.get_object() == user
 
 
-class TestUserRedirectView:
+class TestUserRedirectView:  # pylint: disable=R0201,R0903
     def test_get_redirect_url(self, user: User, rf: RequestFactory):
         view = UserRedirectView()
         request = rf.get("/fake-url")
@@ -53,7 +53,7 @@ class TestUserRedirectView:
         assert view.get_redirect_url() == f"/users/{user.username}/"
 
 
-class TestUserDetailView:
+class TestUserDetailView:  # pylint: disable=R0201
     def test_authenticated(self, user: User, rf: RequestFactory):
         request = rf.get("/fake-url/")
         request.user = UserFactory()

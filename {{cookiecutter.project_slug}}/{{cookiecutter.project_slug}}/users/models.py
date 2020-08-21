@@ -1,15 +1,15 @@
 from typing import TYPE_CHECKING
 
+from django.contrib.auth.models import AbstractUser
+from django.db.models import CharField
+from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
+
 if TYPE_CHECKING:
     # noinspection PyUnresolvedReferences
     import allauth.socialaccount.models  # type: ignore # noqa F401
     # noinspection PyUnresolvedReferences
     import allauth.account.models  # type: ignore # noqa F401
-
-from django.contrib.auth.models import AbstractUser
-from django.db.models import CharField
-from django.urls import reverse
-from django.utils.translation import gettext_lazy as _
 
 
 class User(AbstractUser):
