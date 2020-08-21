@@ -64,13 +64,14 @@ DJANGO_APPS = [
     "django.forms",
 ]
 THIRD_PARTY_APPS = [
-    "crispy_forms",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "corsheaders",
+    "crispy_forms",
     "rest_framework",
     "rest_framework.authtoken",
-    "corsheaders"
+    'drf_yasg',
 ]
 
 LOCAL_APPS = [
@@ -277,6 +278,12 @@ REST_FRAMEWORK = {
 
 # django-cors-headers - https://github.com/adamchainz/django-cors-headers#setup
 CORS_URLS_REGEX = r"^/api/.*$"
+
+# drf-yasg
+SWAGGER_SETTINGS = {
+   'DEFAULT_INFO': 'config.urls.schema_info',
+}
+
 
 # Your stuff...
 # ------------------------------------------------------------------------------
