@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.conf.urls import url
 from django.contrib import admin
+from django.shortcuts import redirect
 from django.urls import include, path
 from django.views import defaults as default_views
 
@@ -66,7 +67,8 @@ schema_view = get_schema_view(schema_info, public=True, permission_classes=(perm
 
 # noinspection PyUnresolvedReferences
 urlpatterns += [
-   url(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-   url(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
-   url(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    url(r"^swagger(?P<format>\.json|\.yaml)$", schema_view.without_ui(cache_timeout=0), name="schema-json"),
+    url(r"^swagger/$", schema_view.with_ui("swagger", cache_timeout=0), name="schema-swagger-ui"),
+    url(r"^redoc/$", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"),
+    url(r"^$", lambda _: redirect("schema-swagger-ui"), name='landing-page')
 ]
