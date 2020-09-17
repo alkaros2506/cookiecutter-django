@@ -1,5 +1,5 @@
 {
-  "project_name": "Lean Django DRF app",
+  "project_name": "Invitae Cart Service",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
   "description": "Behold My Awesome Project",
   "author_name": "Alkis Sellis",
